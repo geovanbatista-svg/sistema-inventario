@@ -1,0 +1,136 @@
+2026-07-31 00:35:08.222 UTC [5051] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-gnu, compiled by clang version 21.1.7, 64-bit
+2026-07-31 00:35:08.224 UTC [5051] LOG:  listening on IPv6 address "::1", port 5432
+2026-07-31 00:35:08.224 UTC [5051] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-31 00:35:08.231 UTC [5051] LOG:  listening on Unix socket "/home/gc/sistema-inventario/.pgdata/.s.PGSQL.5432"
+2026-07-31 00:35:08.245 UTC [5054] LOG:  database system was shut down at 2026-07-31 00:35:07 UTC
+2026-07-31 00:35:08.255 UTC [5051] LOG:  database system is ready to accept connections
+2026-07-31 00:40:08.270 UTC [5052] LOG:  checkpoint starting: time
+2026-07-31 00:41:46.187 UTC [5052] LOG:  checkpoint complete: wrote 979 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.860 s, sync=0.042 s, total=97.918 s; sync files=314, longest=0.015 s, average=0.001 s; distance=4579 kB, estimate=4579 kB; lsn=0/1965ED8, redo lsn=0/1965E48
+2026-07-31 00:54:07.016 UTC [5699] FATAL:  role "gc" does not exist
+2026-07-31 00:54:07.138 UTC [5700] FATAL:  role "gc" does not exist
+2026-07-31 00:54:24.690 UTC [5715] FATAL:  role "gc" does not exist
+2026-07-31 00:54:27.339 UTC [5716] FATAL:  role "gc" does not exist
+2026-07-31 00:54:36.048 UTC [5718] FATAL:  role "gc" does not exist
+2026-07-31 00:54:38.894 UTC [5720] FATAL:  role "gc" does not exist
+2026-08-01 00:16:16.574 UTC [13822] FATAL:  database "sistema_inventario" does not exist
+2026-08-01 00:16:16.606 UTC [13823] FATAL:  database "sistema_inventario" does not exist
+2026-08-01 00:16:31.123 UTC [13826] FATAL:  database "sistema_inventario" does not exist
+2026-08-01 00:16:33.955 UTC [13827] FATAL:  database "sistema_inventario" does not exist
+2026-08-01 00:16:37.168 UTC [13828] FATAL:  database "sistema_inventario" does not exist
+2026-08-01 00:16:47.649 UTC [13842] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 13:37:05.984 UTC [24894] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 13:37:06.023 UTC [24895] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 13:37:24.041 UTC [24899] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 13:37:26.803 UTC [24900] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 15:13:57.184 UTC [26767] FATAL:  role "gc" does not exist
+2026-08-02 15:13:57.190 UTC [26768] FATAL:  role "gc" does not exist
+2026-08-02 15:47:39.962 UTC [26788] ERROR:  permission denied for schema public at character 14
+2026-08-02 15:47:39.962 UTC [26788] STATEMENT:  CREATE TABLE items (
+	  id SERIAL PRIMARY KEY,
+	  name VARCHAR(255) NOT NULL,
+	  category VARCHAR(100) NOT NULL,
+	  quantity VARCHAR(50) NOT NULL
+	);
+2026-08-02 16:14:11.404 UTC [26788] ERROR:  syntax error at or near "psql" at character 1
+2026-08-02 16:14:11.404 UTC [26788] STATEMENT:  psql -U postgres -d inventory_db
+	GRANT CREATE ON SCHEMA public TO inventory_user;
+2026-08-02 16:14:11.404 UTC [26788] WARNING:  no privileges were granted for "public"
+2026-08-02 16:16:22.058 UTC [5052] LOG:  checkpoint starting: time
+2026-08-02 16:16:27.848 UTC [5052] LOG:  checkpoint complete: wrote 58 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.729 s, sync=0.036 s, total=5.791 s; sync files=45, longest=0.028 s, average=0.001 s; distance=152 kB, estimate=4136 kB; lsn=0/198C210, redo lsn=0/198C1B8
+2026-08-02 16:30:23.548 UTC [28179] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 16:31:47.395 UTC [28240] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 16:31:47.426 UTC [28241] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 16:31:50.102 UTC [28243] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 16:32:20.894 UTC [27936] ERROR:  syntax error at or near "Arroz" at character 1
+2026-08-02 16:32:20.894 UTC [27936] STATEMENT:  Arroz
+	-- Inserir dados
+	INSERT INTO items (name, category, quantity)
+	VALUES ('Notebook', 'Eletrônicos', '10');
+2026-08-02 16:33:08.231 UTC [28270] FATAL:  database "sistema_inventario" does not exist
+2026-08-02 16:36:23.232 UTC [5052] LOG:  checkpoint starting: time
+2026-08-02 16:36:24.279 UTC [5052] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.007 s, sync=0.023 s, total=1.048 s; sync files=9, longest=0.020 s, average=0.003 s; distance=8 kB, estimate=3723 kB; lsn=0/198E470, redo lsn=0/198E418
+2026-08-02 17:06:44.828 UTC [28898] ERROR:  null value in column "name" of relation "items" violates not-null constraint
+2026-08-02 17:06:44.828 UTC [28898] DETAIL:  Failing row contains (2, null, null, null).
+2026-08-02 17:06:44.828 UTC [28898] STATEMENT:  INSERT INTO items(name, quantity) VALUES($1, $2) RETURNING *
+2026-08-02 17:06:48.824 UTC [28899] ERROR:  null value in column "name" of relation "items" violates not-null constraint
+2026-08-02 17:06:48.824 UTC [28899] DETAIL:  Failing row contains (3, null, null, null).
+2026-08-02 17:06:48.824 UTC [28899] STATEMENT:  INSERT INTO items(name, quantity) VALUES($1, $2) RETURNING *
+2026-08-02 17:08:40.906 UTC [29068] ERROR:  null value in column "name" of relation "items" violates not-null constraint
+2026-08-02 17:08:40.906 UTC [29068] DETAIL:  Failing row contains (4, null, null, null).
+2026-08-02 17:08:40.906 UTC [29068] STATEMENT:  INSERT INTO items(name, quantity) VALUES($1, $2) RETURNING *
+2026-08-02 17:08:44.375 UTC [29072] ERROR:  null value in column "name" of relation "items" violates not-null constraint
+2026-08-02 17:08:44.375 UTC [29072] DETAIL:  Failing row contains (5, null, null, null).
+2026-08-02 17:08:44.375 UTC [29072] STATEMENT:  INSERT INTO items(name, quantity) VALUES($1, $2) RETURNING *
+2026-08-02 17:11:22.523 UTC [29114] ERROR:  null value in column "name" of relation "items" violates not-null constraint
+2026-08-02 17:11:22.523 UTC [29114] DETAIL:  Failing row contains (6, null, null, null).
+2026-08-02 17:11:22.523 UTC [29114] STATEMENT:  INSERT INTO items(name, quantity) VALUES($1, $2) RETURNING *
+2026-08-02 17:11:23.765 UTC [5052] LOG:  checkpoint starting: time
+2026-08-02 17:11:23.917 UTC [5052] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.104 s, sync=0.029 s, total=0.153 s; sync files=2, longest=0.028 s, average=0.015 s; distance=0 kB, estimate=3351 kB; lsn=0/198E640, redo lsn=0/198E5E8
+2026-08-02 19:26:26.207 UTC [5052] LOG:  checkpoint starting: time
+2026-08-02 19:26:26.557 UTC [5052] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.029 s, total=0.350 s; sync files=4, longest=0.028 s, average=0.008 s; distance=1 kB, estimate=3016 kB; lsn=0/198EC58, redo lsn=0/198EC00
+2026-08-02 23:31:30.415 UTC [5052] LOG:  checkpoint starting: time
+2026-08-02 23:31:30.766 UTC [5052] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.030 s, total=0.352 s; sync files=4, longest=0.028 s, average=0.008 s; distance=1 kB, estimate=2714 kB; lsn=0/198F428, redo lsn=0/198F3D0
+2026-08-03 10:48:54.412 UTC [5052] LOG:  checkpoint starting: time
+2026-08-03 10:48:54.774 UTC [5052] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.028 s, total=0.363 s; sync files=4, longest=0.026 s, average=0.007 s; distance=1 kB, estimate=2443 kB; lsn=0/198F998, redo lsn=0/198F940
+2026-08-03 11:03:55.026 UTC [5052] LOG:  checkpoint starting: time
+2026-08-03 11:03:55.177 UTC [5052] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.104 s, sync=0.031 s, total=0.151 s; sync files=2, longest=0.029 s, average=0.016 s; distance=0 kB, estimate=2199 kB; lsn=0/198FD80, redo lsn=0/198FD28
+2026-08-03 11:13:55.294 UTC [5052] LOG:  checkpoint starting: time
+2026-08-03 11:13:55.640 UTC [5052] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.025 s, total=0.347 s; sync files=4, longest=0.024 s, average=0.006 s; distance=1 kB, estimate=1979 kB; lsn=0/1990358, redo lsn=0/1990300
+2026-08-03 14:03:22.050 UTC [5051] LOG:  received smart shutdown request
+2026-08-03 14:03:22.158 UTC [5051] LOG:  background worker "logical replication launcher" (PID 5057) exited with exit code 1
+2026-08-03 14:03:22.182 UTC [5052] LOG:  shutting down
+2026-08-03 14:03:22.212 UTC [5052] LOG:  checkpoint starting: shutdown immediate
+2026-08-03 14:03:22.355 UTC [5052] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.174 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1781 kB; lsn=0/1990408, redo lsn=0/1990408
+2026-08-03 14:03:22.457 UTC [5051] LOG:  database system is shut down
+2026-08-11 22:33:22.365 UTC [58013] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-gnu, compiled by clang version 21.1.7, 64-bit
+2026-08-11 22:33:22.368 UTC [58013] LOG:  listening on IPv6 address "::1", port 5432
+2026-08-11 22:33:22.368 UTC [58013] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-08-11 22:33:22.376 UTC [58013] LOG:  listening on Unix socket "/home/gc/sistema-inventario/.pgdata/.s.PGSQL.5432"
+2026-08-11 22:33:22.396 UTC [58016] LOG:  database system was shut down at 2026-08-03 14:03:22 UTC
+2026-08-11 22:33:22.426 UTC [58013] LOG:  database system is ready to accept connections
+2026-08-11 22:38:22.496 UTC [58014] LOG:  checkpoint starting: time
+2026-08-11 22:38:22.656 UTC [58014] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.108 s, sync=0.032 s, total=0.160 s; sync files=3, longest=0.030 s, average=0.011 s; distance=0 kB, estimate=0 kB; lsn=0/1990820, redo lsn=0/19907C8
+2026-08-13 12:50:17.857 UTC [58013] LOG:  received smart shutdown request
+2026-08-13 12:50:17.876 UTC [58013] LOG:  background worker "logical replication launcher" (PID 58019) exited with exit code 1
+2026-08-13 12:50:17.900 UTC [58014] LOG:  shutting down
+2026-08-13 12:50:17.924 UTC [58014] LOG:  checkpoint starting: shutdown immediate
+2026-08-13 12:50:18.070 UTC [58014] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.057 s, sync=0.001 s, total=0.167 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/19908D0, redo lsn=0/19908D0
+2026-08-13 12:50:18.138 UTC [58013] LOG:  database system is shut down
+2026-08-14 15:32:05.076 UTC [5437] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-gnu, compiled by clang version 21.1.7, 64-bit
+2026-08-14 15:32:05.078 UTC [5437] LOG:  listening on IPv6 address "::1", port 5432
+2026-08-14 15:32:05.078 UTC [5437] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-08-14 15:32:05.084 UTC [5437] LOG:  listening on Unix socket "/home/gc/sistema-inventario/.pgdata/.s.PGSQL.5432"
+2026-08-14 15:32:05.099 UTC [5440] LOG:  database system was shut down at 2026-08-13 12:50:18 UTC
+2026-08-14 15:32:05.122 UTC [5437] LOG:  database system is ready to accept connections
+2026-08-14 15:37:05.200 UTC [5438] LOG:  checkpoint starting: time
+2026-08-14 15:37:05.258 UTC [5438] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.005 s, total=0.059 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/19909D8, redo lsn=0/1990980
+2026-08-15 21:19:32.015 UTC [2382] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-gnu, compiled by clang version 21.1.7, 64-bit
+2026-08-15 21:19:32.019 UTC [2382] LOG:  listening on IPv6 address "::1", port 5432
+2026-08-15 21:19:32.019 UTC [2382] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-08-15 21:19:32.026 UTC [2382] LOG:  listening on Unix socket "/home/gc/sistema-inventario/.pgdata/.s.PGSQL.5432"
+2026-08-15 21:19:32.048 UTC [2386] LOG:  database system was interrupted; last known up at 2026-08-14 15:37:05 UTC
+2026-08-15 21:19:32.166 UTC [2386] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-08-15 21:19:32.182 UTC [2386] LOG:  redo starts at 0/1990980
+2026-08-15 21:19:32.182 UTC [2386] LOG:  invalid record length at 0/1990A88: expected at least 24, got 0
+2026-08-15 21:19:32.182 UTC [2386] LOG:  redo done at 0/1990A50 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-08-15 21:19:32.193 UTC [2384] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-08-15 21:19:32.221 UTC [2384] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.003 s, total=0.031 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1990A88, redo lsn=0/1990A88
+2026-08-15 21:19:32.230 UTC [2382] LOG:  database system is ready to accept connections
+2026-08-17 23:14:59.687 UTC [2382] LOG:  received smart shutdown request
+2026-08-17 23:14:59.736 UTC [2382] LOG:  background worker "logical replication launcher" (PID 2389) exited with exit code 1
+2026-08-17 23:14:59.737 UTC [2384] LOG:  shutting down
+2026-08-17 23:14:59.741 UTC [2384] LOG:  checkpoint starting: shutdown immediate
+2026-08-17 23:14:59.777 UTC [2384] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.040 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1990B38, redo lsn=0/1990B38
+2026-08-17 23:14:59.821 UTC [2382] LOG:  database system is shut down
+2026-08-18 01:04:26.996 UTC [3649] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-gnu, compiled by clang version 21.1.7, 64-bit
+2026-08-18 01:04:26.998 UTC [3649] LOG:  listening on IPv6 address "::1", port 5432
+2026-08-18 01:04:26.998 UTC [3649] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-08-18 01:04:27.006 UTC [3649] LOG:  listening on Unix socket "/home/gc/sistema-inventario/.pgdata/.s.PGSQL.5432"
+2026-08-18 01:04:27.025 UTC [3652] LOG:  database system was shut down at 2026-08-17 23:14:59 UTC
+2026-08-18 01:04:27.046 UTC [3649] LOG:  database system is ready to accept connections
+2026-08-18 01:09:27.077 UTC [3650] LOG:  checkpoint starting: time
+2026-08-18 01:09:27.106 UTC [3650] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.003 s, total=0.030 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1990C40, redo lsn=0/1990BE8
+2026-08-19 21:57:20.777 UTC [3650] LOG:  checkpoint starting: time
+2026-08-19 21:57:21.140 UTC [3650] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.012 s, total=0.364 s; sync files=4, longest=0.010 s, average=0.003 s; distance=1 kB, estimate=1 kB; lsn=0/19912C0, redo lsn=0/1991268
+2026-08-20 16:17:11.617 UTC [3650] LOG:  checkpoint starting: time
+2026-08-20 16:17:11.984 UTC [3650] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.025 s, total=0.367 s; sync files=4, longest=0.023 s, average=0.007 s; distance=1 kB, estimate=1 kB; lsn=0/1991918, redo lsn=0/19918C0

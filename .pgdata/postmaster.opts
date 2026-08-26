@@ -1,0 +1,1 @@
+/nix/store/ca8jbh8d9v1qh24fm9cfhh7jikzsdiyb-postgresql-17.10/bin/postgres "-k" "/home/gc/sistema-inventario/.pgdata"
