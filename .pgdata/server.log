@@ -134,3 +134,9 @@
 2026-08-19 21:57:21.140 UTC [3650] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.012 s, total=0.364 s; sync files=4, longest=0.010 s, average=0.003 s; distance=1 kB, estimate=1 kB; lsn=0/19912C0, redo lsn=0/1991268
 2026-08-20 16:17:11.617 UTC [3650] LOG:  checkpoint starting: time
 2026-08-20 16:17:11.984 UTC [3650] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.025 s, total=0.367 s; sync files=4, longest=0.023 s, average=0.007 s; distance=1 kB, estimate=1 kB; lsn=0/1991918, redo lsn=0/19918C0
+2026-08-26 22:10:13.408 UTC [3649] LOG:  received smart shutdown request
+2026-08-26 22:10:13.444 UTC [3649] LOG:  background worker "logical replication launcher" (PID 3655) exited with exit code 1
+2026-08-26 22:10:13.481 UTC [3650] LOG:  shutting down
+2026-08-26 22:10:13.494 UTC [3650] LOG:  checkpoint starting: shutdown immediate
+2026-08-26 22:10:13.561 UTC [3650] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.001 s, total=0.080 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1 kB; lsn=0/19919C8, redo lsn=0/19919C8
+2026-08-26 22:10:13.594 UTC [3649] LOG:  database system is shut down
